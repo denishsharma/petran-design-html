@@ -26,5 +26,6 @@ body .__preview {
       -ms-flex-pack: center;
           justify-content: center;
   overflow: auto;
+  border-radius: 12px;
 }
 /*# sourceMappingURL=button-secondary.css.map */
