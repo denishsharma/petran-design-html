@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -10,6 +11,10 @@ body {
   overflow: hidden;
   margin: 0;
   padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0pt;
 }
 
 body .__preview {
@@ -27,5 +32,95 @@ body .__preview {
           justify-content: center;
   overflow: auto;
   border-radius: 12px;
+}
+
+.button-secondary {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 0;
+  font: inherit;
+  background-color: #FFFFFF;
+  color: #1D2939;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  height: 32px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #D0D5DD;
+  border-radius: 6px;
+  margin: 0;
+  padding: 0 13px;
+  font-size: 11.06px;
+  font-weight: 500;
+  letter-spacing: inherit;
+  -webkit-transition: 120ms ease-in-out background-color, 120ms ease-in-out box-shadow, 120ms ease-in-out border-color;
+  transition: 120ms ease-in-out background-color, 120ms ease-in-out box-shadow, 120ms ease-in-out border-color;
+}
+
+.button-secondary::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  pointer-events: none;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 0 0 1.5px #2970FF;
+          box-shadow: 0 0 0 1.5px #2970FF;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  opacity: 0;
+  -webkit-transition: 120ms ease-in-out transform, 120ms ease-in-out opacity;
+  transition: 120ms ease-in-out transform, 120ms ease-in-out opacity;
+}
+
+.button-secondary:hover {
+  background-color: #F2F4F7;
+  -webkit-box-shadow: 0px 0.1px 0.8px rgba(0, 0, 0, 0.025), 0px 1px 6px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0.1px 0.8px rgba(0, 0, 0, 0.025), 0px 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+.button-secondary:focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(234, 236, 240, 0.7);
+          box-shadow: 0 0 0 2px rgba(234, 236, 240, 0.7);
+}
+
+.button-secondary:active {
+  background-color: #FCFCFD;
+  -webkit-box-shadow: 0 0 0 3px rgba(234, 236, 240, 0.9);
+          box-shadow: 0 0 0 3px rgba(234, 236, 240, 0.9);
+}
+
+.button-secondary:focus-visible {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button-secondary:focus-visible::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
+.button-secondary .button-space {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=button-secondary.css.map */
